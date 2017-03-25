@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8"/>
+<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width-device-width, 
+                               initial-scale-1.0">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    
+<link href="https://fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet">
+    
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>    
+</head>
+<body>
+    
+ <a href="#" class="scrollup">Scroll</a>
+    
+    
+<header>
+<div  class="nav-header"> 
+<div class="logo"><font size="5px">WOJCIECH HOREMBAŁA</font>
+<br> WEB DESIGNER &amp; DEVELOPER</div>
+<ul class="nav">
+    <li><a2 href="#home">HOME</a2></li>
+    <li><a  href="#aboutme">O_MNIE</a></li>
+    <li><a  href="#contact">KONTAKT</a></li>
+</ul>
+</div>
+ 
+   
+    
+    
+<div class="jakastamtresc">  
+<div class="text">
+<p class="naglowek">Potrzebujesz Front-end Developera?</p>
+    <p class="trescnaglowka">Jestem junior front-end developerem z Hrubieszowa i obecnie mieszkam w Zamościu. Lubię budować wszystko od małych witryn po duże.</br> Chcesz zlecić wykonanie witryny lub szukasz zdalnego pracownika?</p>     
+</div>
+    
+<div class="buttony">
+    <a href="#contact">
+    <button type="button" class="pierwszy">Napisz do mnie.</button>
+    </a>
+ </div> 
+    
+</div>   
+</header>
+
+<div class="aboutme">
+<div class="linia"></div>
+<div class="omnie">Coś o mnie.</div>
+    <a id="aboutme"></a>
+<img class="profilpicture" src="img/profilowe.jpg" alt="Profilpicture"/>
+<p class="omnietresc">Cześć, mam na imię Wojtek i mam 18 lat. Chodzę do technikum informatycznego, jestem na trzecim roku.</br> We front-endzie siedzę od 3 mięsięcy, sporo się nauczyłem, html5 i css3 nie sprawia mi trudności. W tej chwili dużo uczę się javascript.</p>   
+
+<div class="icon">
+ <img src="img/html5.png" alt="html5"/>   
+ <img src="img/css3.png" alt="css3"/>   
+ <img src="img/ps.png" alt="photoshop"/> </br></br>
+ <img src="img/js.png" alt="javascript"/>      
+</div>
+    
+<div class="linia2"></div>
+<div class="omnie">W najbliższym czasie chcę się nauczyć.</div>  
+<p class="omnietresc">Jestem bardzo zdeterminowany i czerpię niesamowitą radość z poznawania nowych technologi.</p>    
+<div class="icon">
+   <img src="img/angular.png" alt="angular"/>
+    <img src="img/git.png" alt="git"/>
+   <img src="img/nodejs.png" alt="nodejs"/>   
+</div>
+</div>
+
+<div class="przerwa">
+<p class="przerwatresc">Chcesz się więcej dowiedzieć?</p> 
+<p class="przerwanotatka">Zadźwon lub napisz do mnie, odpowiem na wszystkie pytania.</p>
+</div>
+
+<a id="contact"></a>
+<a id="witryna"></a>
+<div class="contact">
+</br></br>
+<div class="linia3"></div> 
+<div class="kontakttresc">Skontaktuj się ze mną.</div> 
+<img class="iconcontact " src="img/call.png" alt="callme"/>   
+<p class="napisz">+ 48 729 630 300</p>
+<img class="iconcontact" src="img/email.png" alt="email"/>   
+<p class="napisz2">wojtek.horembala@onet.pl</p>
+</div>
+
+<div class="media">
+<a href="https://www.facebook.com/Woojtek1" target="_blank">
+<img class="fb" src="img/fb.png" alt="facebook"/>
+</a>
+</div>
+
+
+<script>
+$(document).ready(function () {
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('.scrollup').fadeIn();
+        } else {
+            $('.scrollup').fadeOut();
+        }
+    });
+
+    $('.scrollup').click(function () {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 600);
+        return false;
+    });
+
+});
+</script>
+    
+    
+ <script>
+		$(function() {
+			 $('a[href*="#"]:not([href="#"])').click(function() {
+			   if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+			     var target = $(this.hash);
+			     target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+			     if (target.length) {
+			       $('html,body').stop().animate({
+			         scrollTop: target.offset().top - 70
+			       }, 1000);
+			       return false;
+			     }
+			   }
+			 });
+		});
+</script>   
+</body>
+</html>

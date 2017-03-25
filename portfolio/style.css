@@ -1,0 +1,315 @@
+*{box-sizing: border-box;}
+
+body
+{
+    margin: 0;
+    padding: 0;
+}
+
+/*własna czcionka */
+@font-face 
+{
+   font-family: menuczcionka;
+   src: url(agencyfb.otf);
+}
+
+header
+{
+background: url(img/headertlo.png) center/cover no-repeat;
+height: 100vh;
+}
+
+.logo
+{
+    color:#ffffff;
+    padding-top: 35px;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-left: 120px;
+    float: left;
+}
+
+.scrollup {
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    bottom: 30px;
+    right:50px;
+    display: none;
+    text-indent: -9999px;
+    background: url(img/scrollup.png) center/cover no-repeat;
+}
+
+.nav-header 
+{
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav 
+{  
+  list-style: none;
+  display: inline-flex;
+  padding: 35px 0;
+}
+
+.nav a 
+{
+  padding: 40px;
+  text-decoration: none;
+  color: #ffffff;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.nav a2
+{
+  padding: 40px;
+  text-decoration: none;
+  color: #71cb6e;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  cursor: pointer;   
+}
+
+.nav a:hover 
+{
+  color: #71cb6e;
+}
+
+.text
+{
+  margin-top: 10vh;
+}
+
+.naglowek
+{
+    color: #ffffff;
+    font-size: 36px;
+    margin-left: 120px;
+    display: flex;
+    justify-content: space-between; 
+    font-family: 'Raleway', sans-serif;
+}
+
+.trescnaglowka
+{
+    color: #ffffff;
+    margin-left: 120px;
+    display: flex;
+    justify-content: space-between; 
+    font-size: 20px;
+    margin-right: 10px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.buttony
+{
+   padding-top: 40px;
+}
+
+.pierwszy
+{
+    border: none;
+    color:aliceblue;
+    margin-left: 120px;
+    padding: 20px;
+    display: inline-block;
+    border-radius: 3px;
+    background-color: #71cb6e;
+    padding: 20px 65px 20px 20px;
+    transition: 1s;
+    font-size: 18px;
+    cursor: pointer;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.pierwszy:hover
+{
+    background-color: rgba(113, 203, 110, 0.72);
+}
+
+.drugi
+{
+    border: none;
+    color:aliceblue;
+    padding: 20px 65px 20px 20px;
+    margin-left: 20px;
+    display: inline-block;
+    border-radius: 3px;
+    background-color: rgba(76, 78, 76, 0.72);
+    transition: 1s;
+    font-size: 18px;
+    cursor: pointer;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.drugi:hover
+{
+    background-color: rgba(76, 78, 76, 0.53);
+}
+
+
+/*omnie*/
+
+.aboutme
+{
+    height: 130vh;
+
+}
+
+.omnie
+{
+    color: #000000;
+    font-size: 36px;
+    margin-left: 120px;
+    display: flex;
+    justify-content: space-between; 
+    font-family: 'Raleway', sans-serif;
+    padding-bottom: 15px;
+}
+
+.profilpicture
+{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin-left: 120px;
+}
+
+
+.omnietresc
+{
+    color: #000000;
+    margin-left: 120px;
+    display: flex;
+    justify-content: space-between; 
+    font-size: 20px;
+    margin-right: 50px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.icon
+{
+    margin-left: 120px;
+    padding-top: 20px; 
+}
+
+.linia
+{
+    margin-top: 55px;
+    margin-left: 120px;
+    border: 1px solid #000;
+    width:100px;
+}
+
+.linia2
+{
+    margin-top: 45px;
+    margin-left: 120px;
+    border: 1px solid #000;
+    width:100px;
+}
+
+/*Zdjecieprzerywajace*/
+
+.przerwa
+{
+    background: url(img/przerwapicture.png) center/cover no-repeat;
+    height: 217px;
+}
+
+.przerwatresc
+{
+    padding-top: 35px;
+    color: #FFFFFF;
+    font-size: 36px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+
+.przerwanotatka
+{
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 26px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/*Kontakt*/
+.contact
+{
+    height: 300px;
+    background-color:#000000;
+}
+
+.kontakttresc
+{
+    color: #FFFFFF;
+    font-size: 36px;
+    margin-left: 120px;
+    display: flex;
+    justify-content: space-between; 
+    font-family: 'Raleway', sans-serif;
+}
+
+.linia3
+{
+    margin-left: 120px;
+    border: 1px solid #FFFFFF;
+    width:100px;
+}
+
+.iconcontact 
+{
+    margin-left: 120px;
+    padding-top: 20px;
+    float: left;
+}
+
+.napisz
+{
+    padding-top: 21.5px;
+    padding-left: 25px;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between; 
+    font-size: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.napisz2
+{
+    padding-top: 43px;
+    padding-left: 25px;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between; 
+    font-size: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/*media*/
+.media
+{
+    
+    background-color: #71cb6e;
+    text-align: center;
+}
+
+.fb
+{
+    cursor: pointer;
+    transition: 1s;
+}
+
+.fb:hover
+{
+    opacity: 0.6;
+}
+
+
+
+@media screen and (max-width:784px)
+{
+}
